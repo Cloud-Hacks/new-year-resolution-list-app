@@ -35,8 +35,8 @@ To run the project you will need a Twilio account and a Twilio phone number that
 Then, clone the project, change into the directory and install the dependencies.
 
 ```bash
-git clone https://github.com/Cloud-Hacks/hacky-greet-app.git
-cd send-sms-react-twilio
+git clone https://github.com/Cloud-Hacks/new-year-resolution-list-app.git
+cd new-year-resolution-list-app
 npm install
 ```
 
