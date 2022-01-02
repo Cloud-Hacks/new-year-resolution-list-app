@@ -2,8 +2,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const pino = require('express-pino-logger')();
 const client = require('twilio')(
-  TWILIO_ACCOUNT_SID,
-  TWILIO_AUTH_TOKEN
+  process.env.TWILIO_ACCOUNT_SID,
+  process.env.TWILIO_AUTH_TOKEN
 );
 
 const app = express();
@@ -16,7 +16,7 @@ app.post('/api/messages', (req, res) => {
   client.messages
     .create({
       from: 'whatsapp:+14155238886',
-      to: 'whatsapp:PHONE_NUMBER',
+      to: 'whatsapp:process.env.PHONE_NUMBER',
       body: req.body.body
     })
     .then(() => {
