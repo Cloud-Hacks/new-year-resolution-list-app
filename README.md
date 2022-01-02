@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+![n1](https://user-images.githubusercontent.com/94980910/147877638-075d51fb-9a94-4280-a5fd-2bfb78f54ec5.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![n2](https://user-images.githubusercontent.com/94980910/147877639-7711d4f3-4c1f-4794-b75e-83c4c04fed74.png)
 
-## Available Scripts
+## Inspiration
+Inspired by Twilio API and its feats
 
-In the project directory, you can run:
+## What it does
+It allows to be able to  to create a ToDo list and enable you notify you on whatsapp
 
-### `yarn start`
+## How we built it
+Our app is built upon react js on top of Twilio
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Challenges we ran into
+Configuring Twilio
+Fetching API calls
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Accomplishments that we're proud of
+Twilio setup and its configurations
 
-### `yarn test`
+## What we learned
+API calls and Twilio feats
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## What's next for App
+To setup our new pages and add other feats provided by Twilio like voice calls etc.
 
-### `yarn build`
+This is an example of sending message using React and Twilio. It consists of a `whatsappForm` component that communicates with a server endpoint to [send messages via the Twilio REST API](https://www.twilio.com/docs/).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To see how to build the project yourself, check out the blog post [How to send an message from React with Twilio](https://www.twilio.com/whatsapp).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Running the project
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run the project you will need a Twilio account and a Twilio phone number that can send whatsapp messages. Gather your Twilio Account Sid and Auth Token from the [Twilio console](https://www.twilio.com/console) and the phone number.
 
-### `yarn eject`
+Then, clone the project, change into the directory and install the dependencies.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+git clone https://github.com/Cloud-Hacks/hacky-greet-app.git
+cd send-sms-react-twilio
+npm install
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Find the `.env` and fill in your Twilio credentials and phone number.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Start the application on its own with the command:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+npm run dev
+```
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Open the app at [localhost:3000](http://localhost:3000). You can now use the form to send SMS messages via your Twilio number.
